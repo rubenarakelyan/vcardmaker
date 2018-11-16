@@ -1,0 +1,318 @@
+vCardMaker Changelog
+====================
+
+1.1.0 (Bring Me To Life)
+------------------------
+ - Relicensed under GNU GPL 3 or later
+ - Removed some implementation-specific data
+
+1.0.1 (Me and My Imagination)
+-----------------------------
+Frontend
+ - Redesigned the homepage to show fewer form fields by default
+ - Updated copyright dates
+
+1.0.0 (Encore Une Fois)
+-----------------------
+Frontend
+ - Amended fields to match names changes in backend
+Backend
+ - Changed the following field names for consistency
+  - Version.vCard -> vCard.Version
+  - Name -> vCard.Name
+  - Source -> vCard.Source
+  - Formatted.Name -> Name.Formatted
+  - Name.AdditionalNames -> Name.Additional
+  - Birthdate -> Birth.Date
+  - Birthtime -> Birth.Time
+  - Birthtimezone -> Birth.Time.Zone
+  - Photo.Source.Quoted and Photo.Source.URL -> Photo.Source
+  - Logo.Source.Quoted and Logo.Source.URL -> Logo.Source
+  - Agent and Agent.URL -> Agent.Source
+  - Sound.Source.Phonetic and Sound.Source.URL and Sound.Source.Quoted -> Sound.Source
+  - Key.Quoted -> Key.Source
+  - Comment.Quoted -> Comment
+  - GeographicalProperties.Position.* -> GeographicalProperties.Position.Latitude and GeographicalProperties.Position.Longitude
+
+0.8.2 (Play Me)
+---------------
+Backend
+ - Fixed bugs where blank values for photo, logo, agent, sound or key fields would generate stub entries in the vCard
+
+0.8.1 (Imaginary)
+-----------------
+Backend
+ - Added function and changed others to facilitate future API calls
+
+0.8.0 (After All)
+-----------------
+Frontend
+ - Changed wizard style to allow users to see all pages at once
+ - Removed the progress bar
+ - Fixed bug where help page would open on second monitor on multi-monitor setups
+ - Updated icons
+ - Changed handling of results
+ - Changed to IE7 emulation to mitigate IE8 beta bugs
+  - Resized select box arrow is cut off
+  - Showing of results slows down after few clicks
+ - Upgraded to latest version of jQuery, now hosted on Google
+ - Fixed bug where selecting an autocomplete suggestion would not correctly update the formatted name field
+ - Restored parity between the PHP and ASP.NET/C# versions
+
+0.7.2 (On My Mind)
+------------------
+Frontend
+ - Removed all advertisements
+ - Reformatted and re-styled the form elements
+ - Generally cleaned up the interface
+
+0.7.1 (It's Over Now)
+---------------------
+Backend
+ - Fixed a few small source code formatting issues
+ - Mailer name is now trimmed
+ - Updated the country list (correct as of 15 May 2008)
+ - Fixed bug where results were not being shown in Internet Explorer
+
+0.7.0 (Pink Love)
+-----------------
+Frontend
+ - Changed to a wizard interface
+ - Added a timeline
+ - Moved to jQuery 1.2.1
+ - Moved optional and advanced fields to new advanced options sections
+ - Added a calendar for birth date
+Backend
+ - Released vCardMaker PHP backend on Sourceforge.net
+ - Updated the country list (correct as of 17 January 2008)
+
+0.6.4
+-----
+ - Changed all inline onclick event handlers to onchange handlers
+ - Added an Google AdSense advertisement to the bottom of the page
+
+0.6.3
+-----
+ - Added instructions to the top of the page
+ - Fixed all outstanding PHP errors
+ - Added ability to email vCards
+ - Made at least one email address compulsory
+ - Fixed bug where blank vCard version would spew out errors
+ - Disabled certain options for the primary email
+ - Combined vCard version and "name and source"
+
+0.6.2
+-----
+ - Tweaked some styles
+ - Removed the donation button
+ - Made the footer smaller and updated it
+ - Changed some text to be clearer
+ - Removed all co-branding features
+ - Updated the country list (correct as of 27 May 2007)
+ - Results now appear in an overlay
+ - vCardMaker now works with JavaScript disabled
+ - Moved to mootools 1.1
+ - Changed page title
+ - Made sections collapsible
+ - Made text boxes larger
+
+0.6.1
+-----
+ - Added mandatory TYPE parameter list prefix for 3.0 vCards (user request)
+   - Address
+   - Address Label
+   - Telephone number
+   - Email address
+ - Made URL the default for sounds rather than phonetic
+ - Fixed address label quoted-printable encoding
+
+0.6.0
+-----
+ - Make a lot of changes to the code to facilitate co-branding
+ - PNGCRUSHed the title image
+ - Tweaked the vCardMaker UI
+ - Added contact link
+ - Removed "Report a bug" link
+ - Fixed a bug where the formatted name was not reset with the rest of the form
+ - Removed contextual help - help will be back later in another form
+ - Removed the version number in the footer
+ - Removed lots of unused JavaScript libraries
+ - Removed Behaviour in favour of plain JavaScript
+ - vCard begin and end statements are no longer automatically added to agent vCards
+
+0.5.3
+-----
+ - Added birth time and timezone
+ - Made many more text strings translatable
+ - Added agent URL for 3.0 vCards
+ - Added print styles
+ - Updated the country list (correct as of 15 June 2006)
+
+0.5.2
+-----
+ - Added PayPal donation button
+ - Removed onkeypress attributes from links
+ - Amended some help text
+ - Amended some styles
+
+0.5.1
+-----
+ - Added escaping of colons, semicolons and commas in all fields
+ - Added preferred email address checkbox
+
+0.5.0
+-----
+ - Added moo.ajax and Behaviour to the JavaScript library
+ - Completed the switch to a completely AJAX solution
+ - Started the move to unobtrusive JavaScript
+ - Added form reset facility
+
+0.4.2
+-----
+ - Cleaned up the interface a little
+ - Fixed timezones
+ - Changed contextual help to JavaScript windows
+ - Fixed a couple of JavaScript problems
+
+0.4.1
+-----
+ - Added contextual help to every section
+
+0.4.0
+-----
+ - Reformatted the vCardMaker form (removed all tables)
+ - Moved some interface elements around
+ - Moved last modified date and UID generation to vCard class
+ - Added changelog link to footer
+ - Changed photo, logo, sound and key choosers from radio boxes to select boxes
+ - Fixed showing and hiding of contextual fields
+ - Removed captions for some fields
+
+0.3.1
+-----
+ - Changed the vCard class to accommodate AJAX results
+ - Changed vCard output to an iframe rather than a popup
+
+0.3.0
+-----
+ - Added full vCard 3.0 support
+ - Removed Scriptaculous
+ - Removed the calendar
+
+0.2.8
+-----
+ - Added colour coding for 2.1 and 3.0 specific attributes
+ - Streamlined stylesheet
+ - Fixed the geo position value order
+ - Lots of minor changes to comply with vCard 3.0
+ - Changed the order of some fields to conform with vCard 3.0
+
+0.2.7
+-----
+ - Added vCard sound section
+ - Completed implementation of the full vCard 2.1 spec
+ - Fixed a lot of PHP errors
+ - Consolidated some sections
+ - Fixed flickering when updating the formatted name
+ - Fixed the formatted name field toggle script
+ - Removed the non-JavaScript warning
+
+0.2.6
+-----
+ - Added all creator strings to the language file
+ - Changed input field backgrounds
+ - Removed third email field
+
+0.2.5
+-----
+ - Bought AJAX JavaScript functions in-house
+ - Updated header code
+
+0.2.4
+-----
+ - Fixed some lowercase issues
+ - Added the vCard Agent field
+ - Added 2006 to the birthday calendar
+ - Updated the copyright footer
+
+0.2.3
+-----
+ - Updated all pages to XHTML 1.1 and validated
+
+0.2.2
+-----
+ - Changed a couple of variable names in the class
+ - Added some more comments
+ - Made X-GENERATOR fully use the Version() function
+ - Added some more validation checks for the geographical location fields
+ - Fixed bug with last revision date not showing on final vCard
+
+0.2.1
+-----
+ - Updated timezones
+ - Added trim() to all user inputs
+ - Added a vCard download function
+ - Made vCardMaker form show all results in new window
+ - Added a calendar for easy birthdate selection
+ - Added a function to copy the address details
+
+0.2.0
+-----
+ - Upgraded vCardMaker class to stable status
+ - Upgraded vCardMaker validation class to stable status
+ - Made form compatible with Internet Explorer
+ - Tweaked styles
+
+0.1.7
+-----
+ - Upgraded vCardMaker class to beta status
+ - Added the alpha version of the validation routine
+ - Added required flag to required fields (italics)
+ - Added separate English language string file
+ - Added JavaScript to focus on first field on refresh
+ - Added to do list
+ - Added copyright statement
+ - Added links to vCard 2.1 and 3.0 spec documents
+
+0.1.6
+-----
+ - Added the alpha version of the vCardMaker class
+ - Tweaked the UI and fixed numerous small bugs
+
+0.1.5
+-----
+ - Made the quoted key textarea hidden by default
+ - Increased padding between form fields
+ - Centered the whole form
+
+0.1.4
+-----
+ - Fixed last revision date
+ - Changed UID from disabled text box to hidden field
+ - Added comment field
+ - Revised JavaScript to remove all extra whitespace from formatted name
+ - Removed the "update formatted name field" link
+ - Added code to update the formatted name field on-the-fly
+ - Added two more email fields and one more telephone number field
+ - Tweaked styles
+
+0.1.3
+-----
+ - Added styles
+ - Removed table border
+ - Added more labels
+ - Fixed sectional headings
+ - Made all labels vertically aligned
+ - Rearanged a few sections
+ - Various minor edits
+
+0.1.2
+-----
+ - Removed some comments
+ - Added 'size' and 'maxlength' values to all text fields
+ - Added non-JavaScript warning
+ - Added JavaScript support to make 'Formatted name' field available for editing
+
+0.1.1
+-----
+ - First version

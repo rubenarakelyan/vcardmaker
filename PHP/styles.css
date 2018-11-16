@@ -1,0 +1,172 @@
+/*
+    This file is part of vCardMaker.
+
+    vCardMaker is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    vCardMaker is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with vCardMaker.  If not, see <http://www.gnu.org/licenses/>.
+*/
+ 
+html
+{
+	overflow: auto;
+	font: 62.5% Verdana, "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+}
+
+body
+{
+	width: 800px;
+	margin: 10px auto;
+	padding: 0;
+	background: #fff;
+	color: #000;
+	font-size: 1.1em;
+}
+
+fieldset
+{
+	padding: 0;
+	border: 0;
+}
+
+fieldset ol
+{
+	margin: 0; /* Stops IE < 8 stupidity */
+	padding: 1em 1em 0 1em;
+	list-style: none;
+}
+
+fieldset ol li
+{
+	padding-bottom: 8px;
+}
+
+.vcard-only21
+{
+	color: #00f;
+}
+
+.vcard-only30
+{
+	color: #f00;
+}
+
+label
+{
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+pre
+{
+	font-size: 1.2em;
+}
+
+#header, #footer
+{
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#buttons
+{
+	padding: 20px;
+	text-align: center;
+}
+
+#buttons input
+{
+	padding: 5px 10px;
+}
+
+a.help
+{
+	padding: 4px;
+}
+
+input.checkbox, img.togglesymbol
+{
+	vertical-align: middle;
+}
+
+a.help img {
+	vertical-align: top;
+}
+
+a:link, a:visited
+{
+	color: #555;
+	text-decoration: none;
+}
+
+a:link:hover, a:visited:hover, a:link:active, a:visited:active, a:link:focus, a:visited:focus
+{
+	color: #373737;
+}
+
+a._new_window
+{
+	padding-right: 14px;
+	background: url(images/link_external.png) right center no-repeat;
+}
+
+#results
+{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #000;
+	color: #fff;
+	opacity: 0.8;
+}
+
+#results-close
+{
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 150%;
+	cursor: pointer;
+}
+
+#results-spinner
+{
+	display: none;
+}
+
+img
+{
+	border: none;
+}
+
+/* Help system */
+body.help
+{
+	width: auto;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+div.versioninfo
+{
+	margin: 0;
+	padding: 6px 6px 6px 25px;
+	background: #fbeaae url(images/alert.gif) 4px 6px no-repeat;
+	border: 1px solid #000;
+}
